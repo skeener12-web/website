@@ -11,3 +11,14 @@
 .examples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem 1.2rem;list-style:none;padding:0;margin:0}
 .examples li{background:#fff4dd;border-radius:9px;padding:.7rem .9rem;overflow-wrap:anywhere}
 @media(max-width:480px){.examples{grid-template-columns:1fr}}
+.site-logo {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.site-logo img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
