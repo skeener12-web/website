@@ -97,7 +97,7 @@ cards.forEach(card => {
 const form = document.querySelector('#contactForm');
 form.addEventListener('submit', event => {
   event.preventDefault();
-  const recipient = ''; // Optional: enter your email address here.
+  const recipient = 'sabrinakeener@ymail.com'; 
   const name = document.querySelector('#name').value.trim();
   const message = document.querySelector('#message').value.trim();
   const status = document.querySelector('#formStatus');
