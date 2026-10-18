@@ -11,14 +11,48 @@
 .examples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem 1.2rem;list-style:none;padding:0;margin:0}
 .examples li{background:#fff4dd;border-radius:9px;padding:.7rem .9rem;overflow-wrap:anywhere}
 @media(max-width:480px){.examples{grid-template-columns:1fr}}
-.site-logo {
-  display: inline-block;
-  max-width: 100%;
+
+/* Fix oversized logo and navigation */
+body > header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 16px !important;
+  height: auto !important;
+  min-height: 80px;
 }
 
-.site-logo img {
-  width: 180px;
-  max-width: 100%;
-  height: auto;
-  display: block;
+body > header a.logo {
+  display: block !important;
+  width: 180px !important;
+  max-width: 180px !important;
+  height: auto !important;
+  flex: 0 0 180px !important;
+  padding: 0 !important;
+}
+
+body > header a.logo img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 180px !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+body > header nav {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 16px !important;
+  width: auto !important;
+}
+
+@media (max-width: 600px) {
+  body > header a.logo {
+    width: 130px !important;
+    max-width: 130px !important;
+    flex-basis: 130px !important;
+  }
+}
+isplay: block;
 }
